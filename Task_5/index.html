@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Jendela Dialog </title>
+    <script>
+        alert("Selamat datang di tutorial Javascript");
+
+        function handleButtonClick() {
+            var yakin = confirm("Apakah Anda yakin akan mengunjungi Instagram Saya?");
+            if (yakin) {
+                window.location = "https://instagram.com/arhaf_sa";
+            } else {
+                document.write("Baiklah, tetap di sini saja ya :)");
+            }
+        }
+
+        var nama = prompt("Siapa nama kamu?", "");
+        document.write("<p>Hello "+ nama +"</p>");
+    </script>
+    <style>
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #2a7a2e;
+        }
+    </style>
+</head>
+<body>
+    <button onClick="handleButtonClick()" class="button">Klik Saya</button>
+</body>
+</html>
